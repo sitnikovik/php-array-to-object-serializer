@@ -1,0 +1,20 @@
+{
+    "name": "sitnikovik/array-to-object-serializer",
+    "description": "Tool to convert your class nested with anothers to associative array",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sitnikovik\\ArrayToObjectSerializer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ilya Sitnikov",
+            "email": "sitnikovik@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3"
+    }
+}
