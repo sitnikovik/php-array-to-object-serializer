@@ -4,6 +4,12 @@ namespace Sitnikovik\ArrayToObjectSerializer;
 
 use BadMethodCallException;
 
+/**
+ * Annotation class for @ToObject().
+ *
+ * @Annotation
+ * @Target({"CLASS", "METHOD"})
+ */
 class ToObject
 {
     /**
