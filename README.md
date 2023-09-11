@@ -38,9 +38,11 @@ $object = \Sitnikovik\ArrayToObjectSerializer\ArrayToObject::serialize($array, "
 You have to create object with properties annotated with `@ToObject` for each property you want to convert.
 
 > Note: You have to specify full class name with namespace in `@ToObject` annotation 
-> with `use` statement and `::class` syntax
+> without `use` statement and `::class` syntax cause of current version is adapted for PHP 7.3 and higher.
 
 ```php
+use Sitnikovik\ArrayToObjectSerializer\ToObject;
+
 class Game
 {
     /**
