@@ -10,7 +10,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Sitnikovik\\ArrayToObjectSerializer\\Tests": "tests/"
+            "Sitnikovik\\ArrayToObjectSerializer\\Tests\\": "tests/"
         }
     },
     "authors": [
