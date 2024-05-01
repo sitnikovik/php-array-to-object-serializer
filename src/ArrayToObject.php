@@ -47,13 +47,16 @@ class ArrayToObject
                     }
                 } elseif (!empty($phpDocProps) && !empty($phpDocProps["var"])) {
                     // Check property allowed types if specified
-
                     $allowTypes = $phpDocProps["var"];
                     if (!is_array($allowTypes)) {
                         $allowTypes = [$allowTypes];
                     }
                     if (in_array('int', $allowTypes, true)) {
                         // fixes bug with int type
+                        $allowTypes[] = 'integer';
+                    }
+                    if (in_array('float', $allowTypes, true)) {
+                        // fixes bug with double type
                         $allowTypes[] = 'integer';
                     }
 
